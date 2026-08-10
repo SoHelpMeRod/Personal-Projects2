@@ -151,20 +151,31 @@
   <div class="card">
     <div class="content">
       <svg class="glasses" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- left glass (blue) -->
-        <path d="M22 14 L46 14 L38 44 C38 52 30 56 26 56 C22 56 14 52 14 44 Z" stroke="#2CA9D6" stroke-width="2.4" stroke-linejoin="round"/>
-        <line x1="26" y1="56" x2="26" y2="78" stroke="#2CA9D6" stroke-width="2.4"/>
-        <line x1="14" y1="78" x2="38" y2="78" stroke="#2CA9D6" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M18 20 L42 20" stroke="#2CA9D6" stroke-width="1.6" opacity="0.6"/>
+        <!-- left coupe glass (blue), tilted right toward its partner -->
+        <g transform="rotate(16 32 84)">
+          <path d="M16 18 Q32 12 48 18" stroke="#2CA9D6" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M16 18 Q16 52 32 56 Q48 52 48 18" stroke="#2CA9D6" stroke-width="2.4" stroke-linejoin="round"/>
+          <line x1="32" y1="56" x2="32" y2="80" stroke="#2CA9D6" stroke-width="2.4"/>
+          <line x1="20" y1="84" x2="44" y2="84" stroke="#2CA9D6" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="27" cy="38" r="1.6" fill="#2CA9D6" opacity="0.6"/>
+          <circle cx="36" cy="30" r="1.2" fill="#2CA9D6" opacity="0.5"/>
+          <circle cx="30" cy="24" r="1" fill="#2CA9D6" opacity="0.4"/>
+        </g>
 
-        <!-- right glass (pink), clinked toward the left one -->
-        <path d="M74 10 L100 16 L84 44 C81 51 72 52 69 46 C66 40 70 33 70 33 Z" stroke="#F0A6C0" stroke-width="2.4" stroke-linejoin="round" transform="rotate(-12 84 30)"/>
-        <line x1="79" y1="49" x2="87" y2="70" stroke="#F0A6C0" stroke-width="2.4" transform="rotate(-12 84 30)"/>
-        <line x1="75" y1="70" x2="99" y2="70" stroke="#F0A6C0" stroke-width="2.4" stroke-linecap="round" transform="rotate(-12 84 30)"/>
+        <!-- right coupe glass (pink), tilted left toward its partner -->
+        <g transform="rotate(-16 88 84)">
+          <path d="M72 18 Q88 12 104 18" stroke="#F0A6C0" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M72 18 Q72 52 88 56 Q104 52 104 18" stroke="#F0A6C0" stroke-width="2.4" stroke-linejoin="round"/>
+          <line x1="88" y1="56" x2="88" y2="80" stroke="#F0A6C0" stroke-width="2.4"/>
+          <line x1="76" y1="84" x2="100" y2="84" stroke="#F0A6C0" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="93" cy="38" r="1.6" fill="#F0A6C0" opacity="0.6"/>
+          <circle cx="84" cy="30" r="1.2" fill="#F0A6C0" opacity="0.5"/>
+          <circle cx="90" cy="24" r="1" fill="#F0A6C0" opacity="0.4"/>
+        </g>
 
-        <!-- little sparkles -->
-        <path d="M96 20 L98 24 L102 26 L98 28 L96 32 L94 28 L90 26 L94 24 Z" fill="#F0A6C0" opacity="0.9"/>
-        <circle cx="12" cy="30" r="2.2" fill="#2CA9D6" opacity="0.8"/>
+        <!-- clink sparkle where the rims meet -->
+        <path d="M60 12 L62 17 L67 19 L62 21 L60 26 L58 21 L53 19 L58 17 Z" fill="#F0A6C0" opacity="0.9"/>
+        <circle cx="66" cy="10" r="1.8" fill="#2CA9D6" opacity="0.7"/>
       </svg>
 
       <p class="eyebrow">Save the Date</p>
