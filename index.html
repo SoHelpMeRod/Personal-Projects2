@@ -91,8 +91,8 @@
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 58px;
-    line-height: 1.15;
+    font-size: clamp(30px, 8.5vw, 50px);
+    line-height: 1.25;
     margin: 0 auto 22px;
     background: linear-gradient(100deg, var(--blue-deep), var(--pink-deep));
     -webkit-background-clip: text;
@@ -100,8 +100,10 @@
     color: transparent;
     display: block;
     width: 100%;
-    padding: 0 12px;
+    padding: 0 4px;
     box-sizing: border-box;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .names {
@@ -147,8 +149,7 @@
   }
 
   @media (max-width: 420px) {
-    h1 { font-size: 44px; }
-    .card { padding: 44px 26px 40px; }
+    .card { padding: 44px 24px 40px; }
   }
 </style>
 </head>
@@ -188,7 +189,7 @@
       <h1>let's&nbsp;celebrate</h1>
 
       <p class="names">Adriana &amp; Rod's<br>Engagement &amp; Goodbye</p>
-      <p class="subline">They're getting engaged (Shh..) And they're off to Austin, Tx ; One big celebration before they go! </p>
+      <p class="subline">They're getting engaged (Shh) And they're off to Austin, Texas; One big celebration before they go</p>
 
       <div class="divider"></div>
 
